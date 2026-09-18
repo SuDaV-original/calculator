@@ -1,0 +1,6 @@
+﻿  ConsoleApplication2.cpp
+C:\Users\suvor\source\repos\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(5,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\suvor\source\repos\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(51,13): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\suvor\source\repos\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(56,14): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\suvor\source\repos\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(61,16): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  ConsoleApplication2.vcxproj -> C:\Users\suvor\source\repos\ConsoleApplication2\x64\Debug\ConsoleApplication2.exe
