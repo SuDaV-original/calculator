@@ -22,7 +22,7 @@ int main()
 		cout << "\n Выберите операцию:";
 		cin >> operation;
 		if (operation == 1) {
-			cout << "\n Первое Число:";
+			cout << "\n Первое число:";
 			cin >> first;
 			cout << "\n Второе число:";
 			cin >> second;
