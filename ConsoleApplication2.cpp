@@ -3,65 +3,72 @@
 
 #include <iostream>
 #include <cmath>;
+#include <Windows.h> 
+#pragma execution_character_set("utf-8")
 using namespace std;
 int main()
 {
+	SetConsoleCP(65001); // устанавливаем кодировку входящего потока данных на UTF-8 
+	SetConsoleOutputCP(65001); // устанавливаем кодировку исходящего потока данных на UTF-8
+
 	int operation{ 1 };
-	int first{ 0 };
-	int second{ 0 };
-	int res{ 0 };
+	float first{ 0 };
+	float second{ 0 };
+	float res{ 0 };
+
+	cout << "\n Операции: \n 1. Сложить 2 числа\n 2. Вычесть первое из второго\n 3. Перемножить два числа\n 4. Разделить первое на второе\n 5. Возвести в степень N первое число\n 6. Найти квадратный корень из числа\n 7. Найти 1 процент от числа\n 8. Найти факториал из числа\n 9. Выйти из программы";
 
 	while (true) {
-		cout << "\n Choose operation:";
+		cout << "\n Выберите операцию:";
 		cin >> operation;
 		if (operation == 1) {
-			cout << "\n First number:";
+			cout << "\n Первое Число:";
 			cin >> first;
-			cout << "\n Second number:";
+			cout << "\n Второе число:";
 			cin >> second;
 			res = first + second;
 		}
 		if (operation == 2) {
-			cout << "\n First number:";
+			cout << "\n Первое число:";
 			cin >> first;
-			cout << "\n Second number:";
+			cout << "\n Второе число:";
 			cin >> second;
 			res = second - first;
 		}
 		if (operation == 3) {
-			cout << "\n First number:";
+			cout << "\n Первое число:";
 			cin >> first;
-			cout << "\n Second number:";
+			cout << "\n Второе число:";
 			cin >> second;
 			res = second * first;
 		}
 		if (operation == 4) {
-			cout << "\n First number:";
+			cout << "\n Первое число:";
 			cin >> first;
-			cout << "\n Second number:";
+			cout << "\n Второе число:";
 			cin >> second;
 			res = first / second;
 		}
 		if (operation == 5) {
-			cout << "\n Number:";
+			cout << "\n Число:";
 			cin >> first;
 			res = first;
-			cout << "\n Degree:";
+			cout << "\n Степень:";
 			cin >> second;
 			res = pow(first,second);
 		}
 		if (operation == 6) {
-			cout << "\n Number:";
+			cout << "\n Число:";
 			cin >> first;
 			res = sqrt(first);
 		}
 		if (operation == 7) {
-			cout << "\n Number:";
+			cout << "\n Число:";
 			cin >> first;
 			res = first * 0.01;
 		}
 		if (operation == 8) {
-			cout << "\n Number:";
+			cout << "\n Число:";
 			cin >> first;
 			second = 1;
 			res = 1;
@@ -71,9 +78,10 @@ int main()
 			}
 		}
 		if (operation == 9) {
+			cout << "Сайонара!";
 			break;
 		}
-		cout << "\n Result:";
+		cout << "\n Результат:";
 		cout << res;
 	}
 
